@@ -1,0 +1,46 @@
+/* General Style */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+/* Remove default spacing from all elements */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Set default font for the whole page */
+body {
+  font-family: "Poppins", sans-serif;
+}
+/* Enable smooth scrolling when using anchor links */
+html {
+  scroll-behavior: smooth;
+}
+/* Set a default text color for all paragraphs */
+p {
+  color: rgb(85, 85, 85);
+}
+
+/* Transition */
+/* Smooth transition effect for links and buttons when hovered or focused */
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+/* Desktop nav */
+
+nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
