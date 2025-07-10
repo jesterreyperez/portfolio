@@ -1,8 +1,9 @@
+/* Switch to mobile navigation when screen width is 1200px or less */
 @media screen and (max-width: 1200px) {
   #desktop-nav {
-    display: none;
+    display: none; /* Hide desktop navigation */
   }
   #hamburger-nav {
-    display: flex;
+    display: flex; /* Show hamburger (mobile) navigation */
   }
 }
