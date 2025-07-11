@@ -104,3 +104,45 @@ a:hover {
   overflow: hidden;
   transition: all 0.3s ease-in-out;
 }
+/* Style each menu link inside the mobile menu */
+.menu-links a {
+  display: block; /* Make each link take up full width */
+  padding: 10px; /* Add space around each link */
+  text-align: center; /* Center the link text */
+  font-size: 1.5rem; /* Make the text larger */
+  color: black; /* Set link color */
+  text-decoration: none; /* Remove underline */
+  transition: all 0.3s ease-in-out; /* Smooth effect when hovering */
+}
+/* Remove bullet points from list items */
+.menu-links li {
+  list-style: none;
+}
+/* When the menu has the "open" class, expand its height to show the links */
+.menu-links.open {
+  max-height: 300px;
+}
+/* Rotate and move the first bar of the hamburger icon to form an "X" */
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+/* Hide the second (middle) bar when menu is open */
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+/* Rotate and move the third (last) bar to form an "X" */
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+/* Reset the first bar when menu is closed */
+.hamburger-icon span:first-child {
+  transform: none;
+}
+/* Make sure the middle bar is visible when menu is closed */
+.hamburger-icon span:first-child {
+  opacity: 1;
+}
+/* Reset the third bar when menu is closed */
+.hamburger-icon span:first-child {
+  transform: none;
+}
